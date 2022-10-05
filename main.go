@@ -7,7 +7,11 @@ import (
 )
 
 func main() {
-	contaExemplo := accounts.CheckingAccount{}
-	contaExemplo.Deposit(100)
-	fmt.Println(contaExemplo.GetBalance())
+	denisAccount := accounts.SavingsAccount{}
+
+	denisAccount.Deposit(300)
+	denisAccount.Withdrawal(200)
+
+	fmt.Println(denisAccount.GetBalance())
+
 }
